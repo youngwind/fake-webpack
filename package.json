@@ -1,0 +1,28 @@
+{
+  "name": "fake-webpack",
+  "version": "1.0.0",
+  "description": "模仿webpack写的一款打包工具",
+  "main": "index.js",
+  "bin": "./bin/webpack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngwind/fake-webpack.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "liangshaofeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youngwind/fake-webpack/issues"
+  },
+  "homepage": "https://github.com/youngwind/fake-webpack#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "esprima": "^3.1.3",
+    "yargs": "^6.6.0"
+  }
+}
