@@ -30,6 +30,15 @@ if (nonHyphenatedOptions.length === 1) {
     }
 }
 
+// 定义jsonp的函数名
+options.outputJsonpFunction = 'webpackJsonp';
+
+// 解析出目标output.js所在文件夹
+options.outputDirectory = path.dirname(options.output);
+
+// 解析出目标js文件名的格式,默认为 '.output.js'
+options.outputPostfix = '.' + path.basename(options.output);
+
 webpack(options.input, options);
 
 
