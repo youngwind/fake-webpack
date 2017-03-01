@@ -1,5 +1,5 @@
 # 简介
-通过学习webpack的源码,模仿如何写一个简单版的 webpack。
+通过学习 webpack 的源码,模仿如何写一个简单版的 webpack。相关的源码分析文章请参考[我的博客](https://github.com/youngwind/blog/labels/webpack%20%E6%BA%90%E7%A0%81)
 
 # 实现功能
 - [x] 将所有模块打包到一个 JS 文件 (例子 example/simple)
