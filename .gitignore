@@ -1,3 +1,8 @@
 .idea
-node_modules
 .DS_Store
+node_modules
+examples/code-splitting/1.output.js
+examples/code-splitting/2.output.js
+examples/code-splitting/output.js
+examples/loader/output.js
+examples/simple/output.js

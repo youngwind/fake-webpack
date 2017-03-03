@@ -1,5 +1,6 @@
 # 简介
-通过学习 webpack 的源码,模仿如何写一个简单版的 webpack。相关的源码分析文章请参考[我的博客](https://github.com/youngwind/blog/labels/webpack%20%E6%BA%90%E7%A0%81)
+通过学习 webpack 的源码,模仿如何写一个简单版的 webpack。相关的源码分析文章请参考[我的博客](https://github.com/youngwind/blog/labels/webpack%20%E6%BA%90%E7%A0%81)。
+如何启动及调试本项目,见最下面。
 
 # 实现功能
 - [x] 将所有模块打包到一个 JS 文件 (例子 example/simple)
@@ -312,3 +313,16 @@ module.exports = ".content {\n  width: 50px;\n  height: 50px;\n  background-colo
 /******/})
 ```
 
+# 如何运行本项目
+```
+git clone https://github.com/youngwind/fake-webpack.git
+cd fake-webpack
+npm link // 将 fake-webpack 命令注册到全局
+```
+这时候你就可以在任意一个文件夹调用 `fake-webpack` 命令, 下面是运行 example 的步骤
+
+1. 分别 cd 进去 examples 的各个子文件夹。
+2. 执行 `fake-webpack ./example.js`,可以看到对应生成的 output.js 文件
+3. 用浏览器打开 index.html, 便可以观察到 output.js 的运行结果。
+
+如果需要调试的话,请自行搜索" WebStorm 调试命令行"。
